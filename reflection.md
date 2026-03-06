@@ -8,11 +8,20 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
 
+The hints were incorrect and seemed to be backwards for example they hint was to go lower multiple times but the number was actually much higher. I went all the way to 1 and the next hint was still go lower despite the range being from 1-100. 
+
+The game does not properly restart when you click the new game button.However the attempts restart back to 8. 
+
+The number of attempts left after sometimes inaccurate. If you submit an annswer the first time the attempt is not counted and you still have the full 8 attempts left 
+
+After you guess the number and restart the game, the attempts reset but the message "Yur already won" stays there despite already clicking new game multiple times. The game also does not restart or allow you submit any new attempts
+
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+Claude and ChatGPT
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
