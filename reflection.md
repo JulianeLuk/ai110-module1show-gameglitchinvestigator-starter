@@ -9,6 +9,19 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   (for example: "the secret number kept changing" or "the hints were backwards").
 
 The hints were incorrect and seemed to be backwards for example they hint was to go lower multiple times but the number was actually much higher. I went all the way to 1 and the next hint was still go lower despite the range being from 1-100. 
+![alt text](image.png)
+
+- Output from Co-pilot
+  In app.py. the current logic is reversed. If guess>secret, it return "Too High" but says "go Higher" It is backwards. 
+  Secret is also converted into a string before checking  and then compares the numbers as strings instead of as numbers.
+
+- Output from Claude
+ Line 158-163   Lines 158–163 — the secret gets converted to a string on even      
+When attempts is even, secret becomes a string like "42". Then check_guess is called with guess_int (an integer) vs a string secret. String comparison is alphabetical not numeric.
+
+Co-pilot vs Claude 
+Claude actually did not mention anything about the logic being reversed, it focused mainly on the int to string conversion
+
 
 The game does not properly restart when you click the new game button.However the attempts restart back to 8. 
 
